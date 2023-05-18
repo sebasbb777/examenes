@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="estilo.css">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+        <img src="../img/img.jfif" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+         examen
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                <a class="nav-link active" aria-current="page" href="../index.html">HOME</a>
+                </div>
+            </div>
+    </div>
+</nav>
+</head>
+
+<style>
+  *{
+    transition: 2s ease all ;
+    
+  }
+  body{
+    text-align: center;
+    
+  }
+div{
+  width: 100px;
+  height: 100px;
+  display: block;
+  border: 2px solid blue;
+  margin:auto ;
+  display: flex;
+  justify-content: center;
+  align-items: center
+  
+}
+</style>
+<body onload="cambiar()">
+  <h1>CAMBIAR ESTILO CON JS</h1>
+Color fondo: <input type="color" id="color" onchange="cambiar()" value="#FF0000"><br>
+
+Color texto: <input type="color" id="colort" onchange="cambiar()" value="#FFFFF"><br>
+figura: <select name="figura" id="figura" onchange="cambiar()">
+  <option value="1">cuadrado</option>
+  <option value="2">circulo</option>
+  
+</select><br>
+
+TEXTO:
+<input type="text" id="texto" onkeyup="cambiar()" value="hola"><br>
+ANCHO:
+<input type="range"  id="ancho" onchange="cambiar()" min="1" max="500" value="100"><span id="vancho">100</span><br>
+ALTO:
+<input type="range"  id="alto" onchange="cambiar()" min="1" max="500" value="100"><span id="valto">100</span><br>
+<br><br>
+<div id="item">hola</div>
+<script src="main.js">main.js</script>
+<script src="../js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
